@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Librarian</title>
+  <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div id="control">
+      <div id="q_input">
+        <input type="text" name="q" id="question" placeholder="検索ワードを入力">
+      </div>
+      <div id="q_output">
+        <h4>Translation</h4>
+        <p id="translation"></p>
+        <h4>Dictionary</h4>
+        <textarea id="meaning" readonly wrap="soft"></textarea>
+        <div><button type="button" id="search" onclick="SearchGoogle();" class="square_btn">Google 検索</button></div>
+      </div>
+    </div>
+    <div id="image">
+      <img src="./constellation.PNG">
+      <!--<img src="./image1.PNG">-->
+    </div>
+  </div>
+</body>
+<script>
+  //jQuery使用
+  window.jQuery = window.$ = require('jquery');  
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="./control.js"></script>
+</html>
